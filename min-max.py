@@ -8,27 +8,23 @@ Ingrese 7, 2, bob, 10 y 4 y haga coincidir la salida a continuación.
 largest = None
 smallest = None
 while True:
-    num = input("Enter a number: ")
-    if num == "done":
-        break
     try:
-        fnum = float(num)
+        num = input("Enter a number: ")
+        if num == "done" :
+            break
+        else :
+            fnum = float(num)
     except:
-        print('Invalid input')
-        continue
+        print("Invalid input")
     
     
-    if largest is None:
-        largest = num
-    elif num > largest:
-        largest = num
-    print (f"numero: {num}, mas grande: {largest}")
-
-    if smallest is None:
-        smallest = num
-    elif num < smallest:
-        smallest = num
-    print(f"numero: {num}, mas pequeño: {smallest}")
+    if largest is None and smallest is None :
+        largest = fnum
+        smallest = fnum
+    elif fnum > largest :
+        largest = fnum
+    elif fnum < smallest :
+        smallest = fnum
     
     
 print("Maximum", largest)
