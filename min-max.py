@@ -19,16 +19,16 @@ while True:
     
     
     if largest is None:
-        largest = num
-    elif num > largest:
-        largest = num
-    print (f"numero: {num}, mas grande: {largest}")
+        largest = fnum
+    elif fnum > largest:
+        largest = fnum
+    print (f"numero: {fnum}, mas grande: {largest}")
 
     if smallest is None:
-        smallest = num
+        smallest = fnum
     elif num < smallest:
-        smallest = num
-    print(f"numero: {num}, mas pequeño: {smallest}")
+        smallest = fnum
+    print(f"numero: {fnum}, mas pequeño: {smallest}")
     
     
 print("Maximum", largest)
