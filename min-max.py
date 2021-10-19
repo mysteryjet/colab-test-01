@@ -16,8 +16,6 @@ while True:
     except:
         print('Invalid input')
         continue
-    
-    
     if largest is None:
         largest = fnum
     elif fnum > largest:
@@ -26,10 +24,9 @@ while True:
 
     if smallest is None:
         smallest = fnum
-    elif num < smallest:
+    elif fnum < smallest:
         smallest = fnum
     print(f"numero: {fnum}, mas pequeño: {smallest}")
-    
     
 print("Maximum", largest)
 print('Minimum', smallest)
